@@ -4,7 +4,7 @@
 #
 Name     : libconfig
 Version  : 1.5
-Release  : 7
+Release  : 8
 URL      : http://www.hyperrealm.com/libconfig/libconfig-1.5.tar.gz
 Source0  : http://www.hyperrealm.com/libconfig/libconfig-1.5.tar.gz
 Summary  : C++ Configuration File Library
