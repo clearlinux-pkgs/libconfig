@@ -4,7 +4,7 @@
 #
 Name     : libconfig
 Version  : 1.7.2
-Release  : 16
+Release  : 17
 URL      : https://hyperrealm.github.io/libconfig/dist/libconfig-1.7.2.tar.gz
 Source0  : https://hyperrealm.github.io/libconfig/dist/libconfig-1.7.2.tar.gz
 Summary  : C Configuration File Library
@@ -66,14 +66,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573793902
+export SOURCE_DATE_EPOCH=1605137191
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -86,7 +86,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 (cd tests && ./libconfig_tests)
 
 %install
-export SOURCE_DATE_EPOCH=1573793902
+export SOURCE_DATE_EPOCH=1605137191
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libconfig
 cp %{_builddir}/libconfig-1.7.2/COPYING.LIB %{buildroot}/usr/share/package-licenses/libconfig/7898de9d8a0026da533e44a786a17e435d7697f0
